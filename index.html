@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Payroll Systems Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="chatbot.js"></script>
+</head>
+<body class="dashboard">
+  <nav class="sidebar">
+    <h2>AI Payroll</h2>
+    <ul>
+      <li>🏠 Overview</li>
+      <li>👥 Employees</li>
+      <li>💰 Payroll</li>
+      <li>📈 Reports</li>
+      <li>⚙️ Settings</li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Dashboard Overview</h1>
+    <div class="cards">
+      <div class="card">
+        <h3>Total Employees</h3>
+        <p>58</p>
+      </div>
+      <div class="card">
+        <h3>Payroll Processed</h3>
+        <p>$184,320</p>
+      </div>
+      <div class="card">
+        <h3>Pending Hours</h3>
+        <p>32 hrs</p>
+      </div>
+      <div class="card">
+        <h3>AI Accuracy</h3>
+        <p>99.9%</p>
+      </div>
+    </div>
+
+    <h2>Recent Payments</h2>
+    <table>
+      <tr><th>Employee</th><th>Position</th><th>Amount</th><th>Status</th></tr>
+      <tr><td>John Davis</td><td>HVAC Technician</td><td>$2,420</td><td>✅ Paid</td></tr>
+      <tr><td>Maria Lopez</td><td>Welder</td><td>$1,980</td><td>✅ Paid</td></tr>
+      <tr><td>Chris Taylor</td><td>Electrician</td><td>$2,120</td><td>⚙️ Processing</td></tr>
+    </table>
+  </main>
+
+  <!-- Chatbot -->
+  <div id="chatbot">
+    <div id="chat-header">💬 AI Payroll Assistant</div>
+    <div id="chat-body"></div>
+    <input id="chat-input" placeholder="Ask me about payroll..." />
+  </div>
+</body>
+</html>
